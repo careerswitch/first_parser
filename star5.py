@@ -27,18 +27,18 @@ html = '''
 <div class="Teaser-content"><h2 class="Teaser-name"><a class="Teaser-nameLink" href="../ma/somerville/275-beacon-st.html".
 '''
 
-# parsing
+# html to parser
 soup = BeautifulSoup(html, 'html.parser')
 
 
-# write to csv
+# csv template
 with open('Star_Market.csv', 'w') as csv_file:
     csv_writer = writer(csv_file)
     headers = ['Street', 'City']
     csv_writer.writerow(headers)
 
 
-# extraction of html
+# cleanup of parsed elements
     for a in soup.find_all('a', href=True):
         Street = a['href'].split('/')[-1].replace('.html', '').replace('-', ' ')
         City = a['href'].split('/')[-2].replace('-', ' ')
