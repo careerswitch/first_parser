@@ -43,6 +43,5 @@ with open('Star_Market.csv', 'w') as csv_file:
         Street = a['href'].split('/')[-1].replace('.html', '').replace('-', ' ')
         City = a['href'].split('/')[-2].replace('-', ' ')
         csv_writer.writerow([Street, City])
-
-#print(street, city)   
+ 
     
