@@ -1,3 +1,8 @@
+#! usr/bin/env python3
+'''star5.py by Ahmet Bolat,
+This script scrapes info and prints to csv.
+'''
+
 import bs4
 from bs4 import BeautifulSoup
 from csv import writer
