@@ -1,4 +1,4 @@
-# first_parser
+# star5.py
 
 Took me three days to do it but I have put together a parser to csv code to get locations of starmarket stores in Massachusetts.
 Want to build up on it for actual use. Have a couple of things in mind. I am sure there is an easier/faster code for this.
